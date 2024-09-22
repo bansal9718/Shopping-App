@@ -18,7 +18,7 @@ const bodyParser = require("body-parser");
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://shopping-app-4-yaa2.onrender.com/",
+    origin: "*",
   })
 );
 app.use(bodyParser.json());
