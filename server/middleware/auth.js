@@ -7,7 +7,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:4000/api/auth/google/callback", // This is the URL Google will redirect to after login
+      callbackURL: "https://backend-595s.onrender.com/api/auth/google/callback", // This is the URL Google will redirect to after login
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
