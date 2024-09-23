@@ -34,7 +34,7 @@ router
     passport.authenticate("google", { failureRedirect: "/login" }),
     (req, res) => {
       // Successful authentication, redirect or send a token
-      res.redirect("http://localhost:5173/Home"); // Redirect to your desired route or send a response
+      res.redirect("https://shopping-app-4-yaa2.onrender/Home"); // Redirect to your desired route or send a response
     }
   );
 
