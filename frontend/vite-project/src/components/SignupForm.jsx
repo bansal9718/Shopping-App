@@ -15,7 +15,7 @@ const SignupForm = () => {
 
     //Trigger reCaptcha v3
     const token = await window.grecaptcha.execute(
-      "6LfUq0sqAAAAAM2ZpqbQz4FaPEURjaTQDSZLANug",
+      "6Lfsj0wqAAAAACMiJ6SArR2QhNnI6VK-de4qOsVC",
       { action: "submit" }
     );
     try {

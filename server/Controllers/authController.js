@@ -11,7 +11,7 @@ exports.signup = async (req, res) => {
     return res.status(400).json({ message: "Fill in all details" });
   }
   try {
-    const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6LfUq0sqAAAAAKtJW0Hr7YF987MHpxYEluA6vRhu&response=${captcha}`;
+    const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6Lfsj0wqAAAAAL5-mhYgCTRCy1H0ccJbhQFtMShu&response=${captcha}`;
     const verificationResponse = await axios.post(verificationUrl);
     const { success, score } = verificationResponse.data;
 
