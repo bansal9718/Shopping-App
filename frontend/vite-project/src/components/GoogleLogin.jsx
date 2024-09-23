@@ -1,7 +1,7 @@
 import React from "react";
 const GoogleLogin = () => {
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:4000/api/auth/google";
+    window.location.href = "https://backend-595s.onrender.com/api/auth/google";
   };
   return <button onClick={handleGoogleLogin}>Signup with Google</button>;
 };
