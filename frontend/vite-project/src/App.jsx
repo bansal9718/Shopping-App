@@ -20,9 +20,9 @@ const App = () => {
           <Route element={<ProtectedRoute />}>
             <Route path="/Home" element={<Home />} />
 
-            <Route path="/password-reset/:token" element={<ResetPassword />} />
+            
           </Route>
-
+          <Route path="/password-reset/:token" element={<ResetPassword />} />
           <Route path="/signup" element={<SignupForm />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/reset-password" element={<SendResetPassword />} />
